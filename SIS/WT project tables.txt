@@ -1,0 +1,11 @@
+create table sip_student(sid varchar(15) primary key,name varchar(50),password varchar(20));
+
+create table sip_faculty(fid varchar(15) primary key,fname varchar(50),password varchar(15));
+
+create table class_details(aid number primary key,branch varchar(15),batch number,sem number,total_classes number);
+
+create table attendance(sid varchar(12),aid number,stu_attendance number);
+
+create table test_info(tid number primary key,branch varchar(10),sem number(1),doc varchar(15),internal number(1),total_marks number(3));
+
+create table sip_marks(sid varchar(12),tid number,marks number,subject number);
